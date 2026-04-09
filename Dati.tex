@@ -18,6 +18,7 @@
 \newcommand{\cognomeStudente}{Bottacin}
 \newcommand{\matricolaStudente}{2042340}
 \newcommand{\emailStudente}{giulio.bottacin@studenti.unipd.it}
+\newcommand{\emailPersonaleStudente}{giuliobotta02@gmail.com}
 \newcommand{\telStudente}{+39 340 574 7169}
 
 % Dati del Tutor Aziendale
@@ -39,57 +40,67 @@
 \newcommand{\nomeTutorInterno}{Tullio}
 \newcommand{\cognomeTutorInterno}{Vardanega}
 
-\newcommand{\prospettoSettimanale}{
-    \begin{itemize}
-        \item \textbf{Prima Settimana (40 ore) --- Formazione: Onboarding e introduzione al progetto}
-        \begin{itemize}
-            \item Incontro con le persone coinvolte nel progetto;
-            \item Verifica credenziali e strumenti di lavoro assegnati;
-            \item Presa visione dell’infrastruttura esistente;
-            \item Introduzione al progetto e agli obiettivi dello stage;
-        \end{itemize}
-        \item \textbf{Seconda Settimana (40 ore) --- Formazione: Studio delle tecnologie}
-        \begin{itemize}
-            \item Studio della piattaforma Elastic (Elasticsearch e Kibana);
-            \item Studio della piattaforma AppDynamics e delle API di integrazione;
-            \item Approfondimento dei modelli LLM disponibili (OpenAI, Anthropic, Microsoft);
-        \end{itemize}
-        \item \textbf{Terza Settimana (40 ore) --- Analisi e progettazione}
-        \begin{itemize}
-            \item Analisi delle specifiche funzionali e dei casi d’uso;
-            \item Progettazione dell’architettura tecnica della soluzione;
-            \item Definizione dei flussi decisionali per la gestione delle anomalie;
-        \end{itemize}
-        \item \textbf{Quarta Settimana (40 ore) --- Realizzazione: Integrazione Elastic-AppDynamics}
-        \begin{itemize}
-            \item Implementazione dell’automazione Python per l’importazione dati da AppDynamics;
-            \item Configurazione degli indici Elastic per i dati di traffico utente;
-        \end{itemize}
-        \item \textbf{Quinta Settimana (40 ore) --- Realizzazione: Sviluppo AI Agent core}
-        \begin{itemize}
-            \item Sviluppo del nucleo dell’AI Agent basato su tecnologia Elastic;
-            \item Integrazione con il modello LLM scelto per l’analisi delle metriche;
-            \item Implementazione del rilevamento anomalie di sicurezza e performance;
-        \end{itemize}
-        \item \textbf{Sesta Settimana (40 ore) --- Realizzazione: Dashboard e workflow}
-        \begin{itemize}
-            \item Realizzazione della dashboard Kibana per la visualizzazione delle anomalie;
-            \item Implementazione del workflow di gestione automatizzata degli incidenti;
-            \item Inizio stesura documentazione tecnica;
-        \end{itemize}
-        \item \textbf{Settima Settimana (40 ore) --- Realizzazione: Test e integrazione}
-        \begin{itemize}
-            \item Test del sistema end-to-end e validazione dei risultati;
-            \item Ottimizzazione delle performance e correzione dei difetti rilevati;
-            \item Proseguimento stesura documentazione;
-        \end{itemize}
-        \item \textbf{Ottava Settimana (40 ore) --- Documentazione: Stesura e revisione finale}
-        \begin{itemize}
-            \item Completamento della documentazione tecnica (architettura, flussi, esempi d’uso);
-            \item Stesura della documentazione funzionale (use case);
-            \item Revisione finale e consegna dei prodotti attesi;
-        \end{itemize}
-    \end{itemize}
+\newcommand{\prospettoSettimanale}{%
+{\renewcommand{\arraystretch}{1.4}%
+\begin{longtable}{|p{3.5cm}|p{13.3cm}|}
+\hline
+\textbf{Settimana / Fase} & \textbf{Attività} \\\hline
+\endfirsthead
+\hline
+\textbf{Settimana / Fase} & \textbf{Attività} \\\hline
+\endhead
+\hline
+\endlastfoot
+%
+\textbf{Prima Settimana}\newline(40 ore)\newline\textit{Formazione:}\newline\textit{Onboarding} &
+\textbullet~Incontro con le persone coinvolte nel progetto;\newline
+\textbullet~Verifica credenziali e strumenti di lavoro assegnati;\newline
+\textbullet~Presa visione dell’infrastruttura esistente;\newline
+\textbullet~Introduzione al progetto e agli obiettivi dello stage.
+\\\hline
+%
+\textbf{Seconda Settimana}\newline(40 ore)\newline\textit{Formazione:}\newline\textit{Studio tecnologie} &
+\textbullet~Studio della piattaforma Elastic (Elasticsearch e Kibana);\newline
+\textbullet~Studio della piattaforma AppDynamics e delle API di integrazione;\newline
+\textbullet~Approfondimento dei modelli LLM disponibili (OpenAI, Anthropic, Microsoft).
+\\\hline
+%
+\textbf{Terza Settimana}\newline(40 ore)\newline\textit{Analisi e}\newline\textit{progettazione} &
+\textbullet~Analisi delle specifiche funzionali e dei casi d’uso;\newline
+\textbullet~Progettazione dell’architettura tecnica della soluzione;\newline
+\textbullet~Definizione dei flussi decisionali per la gestione delle anomalie.
+\\\hline
+%
+\textbf{Quarta Settimana}\newline(40 ore)\newline\textit{Realizzazione:}\newline\textit{Integrazione} &
+\textbullet~Implementazione dell’automazione Python per l’importazione dati da AppDynamics;\newline
+\textbullet~Configurazione degli indici Elastic per i dati di traffico utente.
+\\\hline
+%
+\textbf{Quinta Settimana}\newline(40 ore)\newline\textit{Realizzazione:}\newline\textit{AI Agent core} &
+\textbullet~Sviluppo del nucleo dell’AI Agent basato su tecnologia Elastic;\newline
+\textbullet~Integrazione con il modello LLM scelto per l’analisi delle metriche;\newline
+\textbullet~Implementazione del rilevamento anomalie di sicurezza e performance.
+\\\hline
+%
+\textbf{Sesta Settimana}\newline(40 ore)\newline\textit{Realizzazione:}\newline\textit{Dashboard} &
+\textbullet~Realizzazione della dashboard Kibana per la visualizzazione delle anomalie;\newline
+\textbullet~Implementazione del workflow di gestione automatizzata degli incidenti;\newline
+\textbullet~Inizio stesura documentazione tecnica.
+\\\hline
+%
+\textbf{Settima Settimana}\newline(40 ore)\newline\textit{Realizzazione:}\newline\textit{Test} &
+\textbullet~Test del sistema end-to-end e validazione dei risultati;\newline
+\textbullet~Ottimizzazione delle performance e correzione dei difetti rilevati;\newline
+\textbullet~Proseguimento stesura documentazione.
+\\\hline
+%
+\textbf{Ottava Settimana}\newline(40 ore)\newline\textit{Documentazione} &
+\textbullet~Completamento della documentazione tecnica (architettura, flussi, esempi d’uso);\newline
+\textbullet~Stesura della documentazione funzionale (use case);\newline
+\textbullet~Revisione finale e consegna dei prodotti attesi.
+\\\hline
+\end{longtable}%
+}%
 }
 
 % Indicare il totale complessivo (deve essere compreso tra le 300 e le 320 ore)

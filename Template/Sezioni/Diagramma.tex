@@ -3,30 +3,93 @@
 %----------------------------------------------------------------------------------------
 \section*{Diagramma di Gantt}
 Di seguito è riportato il diagramma di Gantt relativo al piano di lavoro previsto.
-% \begin{center}
-% 	\includegraphics[width=18cm]{img/gantt.png}
-% \end{center}
 
 \begin{center}
 \begin{ganttchart}[
     hgrid,
     vgrid,
-    x unit=1.7cm,
-    y unit title=0.6cm,
-    y unit chart=0.7cm,
-    title label font=\small,
-    bar label font=\small,
-    title/.style={fill=gray!30},
-    bar/.style={fill=blue!40},
-    bar incomplete/.style={fill=blue!20},
-    bar label node/.append style={align=left},
-    milestone/.style={fill=red!60}
+    x unit=1.55cm,
+    y unit title=0.65cm,
+    y unit chart=0.6cm,
+    title label font=\footnotesize,
+    bar label font=\footnotesize\itshape,
+    group label font=\footnotesize\bfseries,
+    title/.style={fill=gray!25},
+    group/.style={draw=black, fill=black!65},
+    group incomplete/.style={fill=black!30},
+    bar label node/.append style={align=left, text width=4.5cm},
+    group label node/.append style={align=left, text width=4.5cm},
+    milestone label font=\footnotesize\bfseries,
+    milestone/.style={fill=red!70, shape=diamond, inner sep=3pt},
+    link/.style={->, thick, draw=gray!60}
 ]{1}{8}
-    \gantttitle{Settimane}{8} \\
-    \gantttitlelist{1,...,8}{1} \\
-    \ganttbar{Formazione}{1}{2} \\
-    \ganttbar{Analisi e progettazione}{2}{3} \\
-    \ganttbar{Realizzazione e test}{3}{7} \\
-    \ganttbar{Documentazione}{6}{8}
+    % Riga dei titoli — settimane
+    \gantttitle{Sett. 1}{1}
+    \gantttitle{Sett. 2}{1}
+    \gantttitle{Sett. 3}{1}
+    \gantttitle{Sett. 4}{1}
+    \gantttitle{Sett. 5}{1}
+    \gantttitle{Sett. 6}{1}
+    \gantttitle{Sett. 7}{1}
+    \gantttitle{Sett. 8}{1} \\
+
+    % --- Fase 1: Formazione ---
+    \ganttgroup[
+        group/.append style={fill=blue!60}
+    ]{Formazione}{1}{2} \\
+    \ganttbar[
+        bar/.style={fill=blue!30, rounded corners=2pt}
+    ]{~~Onboarding e infrastruttura}{1}{1} \\
+    \ganttbar[
+        bar/.style={fill=blue!30, rounded corners=2pt}
+    ]{~~Studio Elastic, AppD, LLM}{2}{2} \\
+
+    % --- Fase 2: Analisi e progettazione ---
+    \ganttgroup[
+        group/.append style={fill=orange!70}
+    ]{Analisi e progettazione}{3}{3} \\
+    \ganttbar[
+        bar/.style={fill=orange!35, rounded corners=2pt}
+    ]{~~Specifiche e casi d'uso}{3}{3} \\
+    \ganttbar[
+        bar/.style={fill=orange!35, rounded corners=2pt}
+    ]{~~Architettura e flussi}{3}{3} \\
+
+    % --- Fase 3: Realizzazione ---
+    \ganttgroup[
+        group/.append style={fill=green!60}
+    ]{Realizzazione}{4}{7} \\
+    \ganttbar[
+        bar/.style={fill=green!30, rounded corners=2pt}
+    ]{~~O01: Integraz. Elastic-AppD}{4}{4} \\
+    \ganttbar[
+        bar/.style={fill=green!30, rounded corners=2pt}
+    ]{~~O02: AI Agent core}{5}{5} \\
+    \ganttbar[
+        bar/.style={fill=green!30, rounded corners=2pt}
+    ]{~~O03: Dashboard Kibana}{6}{6} \\
+    \ganttbar[
+        bar/.style={fill=green!30, rounded corners=2pt}
+    ]{~~O04: Workflow incidenti}{6}{6} \\
+    \ganttbar[
+        bar/.style={fill=green!30, rounded corners=2pt}
+    ]{~~Test e validazione}{7}{7} \\
+
+    % --- Fase 4: Documentazione ---
+    \ganttgroup[
+        group/.append style={fill=purple!55}
+    ]{Documentazione}{6}{8} \\
+    \ganttbar[
+        bar/.style={fill=purple!25, rounded corners=2pt}
+    ]{~~O05: Doc. tecnica e funzionale}{6}{8} \\
+
+    % Milestone finale
+    \ganttmilestone{Fine Stage}{8}
+
+    % Dipendenze tra fasi
+    \ganttlink{elem0}{elem3}
+    \ganttlink{elem3}{elem6}
+    \ganttlink{elem6}{elem12}
+    \ganttlink{elem12}{elem14}
 \end{ganttchart}
 \end{center}
