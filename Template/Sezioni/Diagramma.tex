@@ -8,6 +8,26 @@ Di seguito è riportato il diagramma di Gantt relativo al piano di lavoro previs
 % \end{center}
 
 \begin{center}
-\textit{[Inserire qui il diagramma di Gantt con la suddivisione settimanale delle attività.\\
-Il diagramma deve coprire l'intera durata dello stage e mostrare le fasi principali.]}
+\begin{ganttchart}[
+    hgrid,
+    vgrid,
+    x unit=1.7cm,
+    y unit title=0.6cm,
+    y unit chart=0.7cm,
+    title label font=\small,
+    bar label font=\small,
+    title/.style={fill=gray!30},
+    bar/.style={fill=blue!40},
+    bar incomplete/.style={fill=blue!20},
+    bar label node/.append style={align=left},
+    milestone/.style={fill=red!60},
+    today=0
+]{1}{8}
+    \gantttitle{Settimane}{8} \\
+    \gantttitlelist{1,...,8}{1} \\
+    \ganttbar{Formazione}{1}{2} \\
+    \ganttbar{Analisi e progettazione}{2}{3} \\
+    \ganttbar{Realizzazione e test}{3}{7} \\
+    \ganttbar{Documentazione}{6}{8}
+\end{ganttchart}
 \end{center}

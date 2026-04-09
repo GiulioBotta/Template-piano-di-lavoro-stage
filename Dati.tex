@@ -24,12 +24,12 @@
 \newcommand{\nomeTutorAziendale}{Stefano}
 \newcommand{\cognomeTutorAziendale}{Bertolin}
 \newcommand{\emailTutorAziendale}{stefano.bertolin@kireygroup.com}
-\newcommand{\telTutorAziendale}{[Telefono tutor aziendale]}
-\newcommand{\ruoloTutorAziendale}{[Ruolo in azienda]}
+\newcommand{\telTutorAziendale}{+39 335 832 4811}
+\newcommand{\ruoloTutorAziendale}{Senior Manager}
 
 % Dati dell'Azienda
 \newcommand{\ragioneSocAzienda}{Kirey S.r.l.}
-\newcommand{\indirizzoAzienda}{Corso Stati Uniti, 14/B, 35127 Padova (PD)}
+\newcommand{\indirizzoAzienda}{Corso Stati Uniti, 14/bis, 35127 Padova (PD)}
 \newcommand{\sitoAzienda}{https://www.kireygroup.com/}
 \newcommand{\emailAzienda}{stefano.bertolin@kireygroup.com}
 \newcommand{\partitaIVAAzienda}{CF/P.IVA 06729880960}
@@ -41,66 +41,73 @@
 
 \newcommand{\prospettoSettimanale}{
     \begin{itemize}
-        \item \textbf{Prima Settimana {[XX ore]} --- {[Titolo fase, es. Onboarding e formazione]}}
+        \item \textbf{Prima Settimana (40 ore) --- Formazione: Onboarding e introduzione al progetto}
         \begin{itemize}
             \item Incontro con le persone coinvolte nel progetto;
             \item Verifica credenziali e strumenti di lavoro assegnati;
             \item Presa visione dell’infrastruttura esistente;
-            \item {[Altra attività prevista]};
+            \item Introduzione al progetto e agli obiettivi dello stage;
         \end{itemize}
-        \item \textbf{Seconda Settimana {[XX ore]} --- {[Titolo fase]}}
+        \item \textbf{Seconda Settimana (40 ore) --- Formazione: Studio delle tecnologie}
         \begin{itemize}
-            \item {[Attività prevista]};
-            \item {[Attività prevista]};
+            \item Studio della piattaforma Elastic (Elasticsearch e Kibana);
+            \item Studio della piattaforma AppDynamics e delle API di integrazione;
+            \item Approfondimento dei modelli LLM disponibili (OpenAI, Anthropic, Microsoft);
         \end{itemize}
-        \item \textbf{Terza Settimana {[XX ore]} --- {[Titolo fase]}}
+        \item \textbf{Terza Settimana (40 ore) --- Analisi e progettazione}
         \begin{itemize}
-            \item {[Attività prevista]};
-            \item {[Attività prevista]};
+            \item Analisi delle specifiche funzionali e dei casi d’uso;
+            \item Progettazione dell’architettura tecnica della soluzione;
+            \item Definizione dei flussi decisionali per la gestione delle anomalie;
         \end{itemize}
-        \item \textbf{Quarta Settimana {[XX ore]} --- {[Titolo fase]}}
+        \item \textbf{Quarta Settimana (40 ore) --- Realizzazione: Integrazione Elastic-AppDynamics}
         \begin{itemize}
-            \item {[Attività prevista]};
-            \item {[Attività prevista]};
+            \item Implementazione dell’automazione Python per l’importazione dati da AppDynamics;
+            \item Configurazione degli indici Elastic per i dati di traffico utente;
         \end{itemize}
-        \item \textbf{Quinta Settimana {[XX ore]} --- {[Titolo fase]}}
+        \item \textbf{Quinta Settimana (40 ore) --- Realizzazione: Sviluppo AI Agent core}
         \begin{itemize}
-            \item {[Attività prevista]};
-            \item {[Attività prevista]};
+            \item Sviluppo del nucleo dell’AI Agent basato su tecnologia Elastic;
+            \item Integrazione con il modello LLM scelto per l’analisi delle metriche;
+            \item Implementazione del rilevamento anomalie di sicurezza e performance;
         \end{itemize}
-        \item \textbf{Sesta Settimana {[XX ore]} --- {[Titolo fase]}}
+        \item \textbf{Sesta Settimana (40 ore) --- Realizzazione: Dashboard e workflow}
         \begin{itemize}
-            \item {[Attività prevista]};
-            \item {[Attività prevista]};
+            \item Realizzazione della dashboard Kibana per la visualizzazione delle anomalie;
+            \item Implementazione del workflow di gestione automatizzata degli incidenti;
+            \item Inizio stesura documentazione tecnica;
         \end{itemize}
-        \item \textbf{Settima Settimana {[XX ore]} --- {[Titolo fase]}}
+        \item \textbf{Settima Settimana (40 ore) --- Realizzazione: Test e integrazione}
         \begin{itemize}
-            \item {[Attività prevista]};
-            \item {[Attività prevista]};
+            \item Test del sistema end-to-end e validazione dei risultati;
+            \item Ottimizzazione delle performance e correzione dei difetti rilevati;
+            \item Proseguimento stesura documentazione;
         \end{itemize}
-        \item \textbf{Ottava Settimana {[XX ore]} --- {[Titolo fase, es. Collaudo e documentazione finale]}}
+        \item \textbf{Ottava Settimana (40 ore) --- Documentazione: Stesura e revisione finale}
         \begin{itemize}
-            \item {[Attività prevista]};
-            \item {[Attività prevista]};
+            \item Completamento della documentazione tecnica (architettura, flussi, esempi d’uso);
+            \item Stesura della documentazione funzionale (use case);
+            \item Revisione finale e consegna dei prodotti attesi;
         \end{itemize}
     \end{itemize}
 }
 
 % Indicare il totale complessivo (deve essere compreso tra le 300 e le 320 ore)
-\newcommand{\totaleOre}{[Totale ore --- tra 300 e 320]}
+\newcommand{\totaleOre}{320}
 
 \newcommand{\obiettiviObbligatori}{
-	 \item \underline{\textit{O01}}: [Primo obiettivo obbligatorio];
-	 \item \underline{\textit{O02}}: [Secondo obiettivo obbligatorio];
-	 \item \underline{\textit{O03}}: [Terzo obiettivo obbligatorio];
+	 \item \underline{\textit{O01}}: Implementazione di un'automazione Python per l'importazione in Elastic di dati di traffico utente provenienti da AppDynamics;
+	 \item \underline{\textit{O02}}: Sviluppo di un prototipo funzionante di AI Agent basato su tecnologia Elastic, in grado di analizzare metriche con LLM e individuare anomalie di sicurezza e performance in tempo reale;
+	 \item \underline{\textit{O03}}: Realizzazione di una dashboard Kibana per la visualizzazione in tempo reale delle anomalie rilevate;
+	 \item \underline{\textit{O04}}: Definizione e implementazione di un workflow strutturato per la gestione automatizzata degli incidenti (security e performance) con meccanismo di approvazione umana (human-in-the-loop);
+	 \item \underline{\textit{O05}}: Stesura della documentazione tecnica (architettura, flussi decisionali, esempi di utilizzo) e funzionale (use case);
 }
 
 \newcommand{\obiettiviDesiderabili}{
-	 \item \underline{\textit{D01}}: [Primo obiettivo desiderabile];
-	 \item \underline{\textit{D02}}: [Secondo obiettivo desiderabile];
+	 \item \underline{\textit{D01}}: Implementazione di una versione alternativa dell'AI Agent utilizzando Python con LangChain/LangGraph, per ridurre la dipendenza da stack proprietari;
+	 \item \underline{\textit{D02}}: Analisi comparativa tra l'approccio Elastic-based e l'approccio Open Source (flessibilità, scalabilità, complessità implementativa, costi, manutenibilità);
 }
 
 \newcommand{\obiettiviFacoltativi}{
-	 \item \underline{\textit{F01}}: [Primo obiettivo facoltativo];
-	 \item \underline{\textit{F02}}: [Secondo obiettivo facoltativo];
+	 \item \underline{\textit{F01}}: Confronto tra modelli LLM (OpenAI, Anthropic Claude, Microsoft Copilot) valutando qualità delle analisi, capacità di reasoning, accuratezza nella classificazione degli incidenti, costi e latenza;
 }
